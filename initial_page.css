@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+ 
+}
+:root{
+--red:#400612;
+--light-white:#E8F7FA;
+ --dark-blue:#1D1441;
+ --light-blue:#2A91CC;   
+ --dark-black:#0E1627;
+}
+body{
+    position: relative;
+   background-image: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
+   background-repeat: no-repeat;
+   z-index: 1;
+   height: 100vh;
+}
+/* pagina inicial */
+.container-inicial{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex; /* TROCAR PARA FLEX */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Vayne_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.trocar_pagina{
+    opacity: 1;
+    animation-name: change_page;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Vayne_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.filter{
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.200);
+}
+.conteudo-inicial{
+    background-color: rgba(0, 0, 0, 0.600);
+    padding: 3rem;
+    margin-bottom: 5%;
+    position: relative;
+    width: 600px;
+    z-index: 4;
+    border-radius: 10px;
+}
+.conteudo-inicial h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 5em;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--dark-blue), var(--light-blue), var(--dark-black));
+    background-size: 400% 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    
+   
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+
+    animation: degrade 20s infinite linear alternate;
+  
+}
+.conteudo-inicial h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size:3em;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--dark-blue), var(--light-blue), var(--dark-black));
+    background-size: 400% 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    
+   
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    
+    animation: degrade 20s infinite linear alternate;
+
+}
+.container-inicial p {
+    color:var(--light-white);
+    line-height: 1.5em;
+    text-indent: 1rem;
+}
+.container-inicial p span{
+    display: none;
+}
+.container-inicial p button{
+    background-color: transparent;
+    color: var(--light-blue);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button .mudar-pagina{
+    font-weight: 500;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    text-shadow: 1px var(--dark-black);
+    padding: 1rem 1.3rem;
+    color: var(--light-white);
+    background-color: #2A91CC;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: ease-out 0.5s;
+}
+.button .mudar-pagina:hover{
+    background-color: transparent;
+    border:2px solid var(--light-blue)
+}
+/* pagina inicial */
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    50%{
+        background-position-x:200%;
+    }
+    100%{
+        background-position-x: 400%;
+    }
+}
+
+@keyframes change_page {
+    0%{
+        transform:translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-100vh);
+        opacity: 0.2;
+        display: none;
+    }
+  
+}
+/* pagina inicial */
+
+@media screen and (min-width:720px) and (max-width:1050px){
+    .container-inicial{
+        background-size: cover;
+        background-position: center right;
+    }
+}
+
+
+@media screen and (max-width:719px) {
+      .container-inicial{
+        background-size: cover;
+        background-position: center right;
+    }
+    .conteudo-inicial h1{
+    font-size: 3.5rem;
+}
+.conteudo-inicial h2{
+    font-size: 2.5rem;
+}
+.container-inicial p {
+    color:var(--light-white);
+    text-indent: 1rem;
+    max-width: 300px;
+    margin-left: 1.5rem;
+    text-align: justify;
+}
+.conteudo-inicial{
+    padding: 1rem;
+    width: 400px;
+}
+.conteudo-inicial{
+    background-color: rgba(0, 0, 0, 0.800);
+
+}
+}
+
+
+
+
+
