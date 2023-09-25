@@ -22,6 +22,7 @@ body{
 }
 /* pagina inicial */
 .container-inicial{
+    
     z-index: 2;
     position: absolute;
     top: 0;
@@ -54,7 +55,6 @@ body{
     background-image: url(images/Vayne_0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .filter{
     position: absolute;
@@ -64,6 +64,11 @@ body{
     background-color: rgba(0, 0, 0, 0.200);
 }
 .conteudo-inicial{
+    transition: ease-in-out ;
+    box-shadow: 2px 2px 3px var(--light-blue);
+    animation-name: box-animaction;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     background-color: rgba(0, 0, 0, 0.600);
     padding: 3rem;
     margin-bottom: 5%;
@@ -163,6 +168,17 @@ body{
 }
 /* pagina inicial */
 
+@keyframes box-animaction{
+    25%{
+        box-shadow: 2px 2px 3px var(--light-blue);
+    }
+    50%{
+        box-shadow: 2px 2px 6px var(--light-blue);
+    }
+    100%{
+        box-shadow: 2px 2px 3px var(--light-blue);
+    }
+}
 @keyframes degrade {
     0%{
         background-position-x: 0%;
@@ -195,7 +211,6 @@ body{
         background-position: center right;
     }
 }
-
 
 @media screen and (max-width:719px) {
       .container-inicial{
