@@ -173,7 +173,7 @@ body{
         box-shadow: 2px 2px 3px var(--light-blue);
     }
     50%{
-        box-shadow: 2px 2px 6px var(--light-blue);
+        box-shadow: 3px 3px 6px var(--light-blue);
     }
     100%{
         box-shadow: 2px 2px 3px var(--light-blue);
