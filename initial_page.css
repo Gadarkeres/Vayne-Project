@@ -14,9 +14,6 @@
  --dark-black:#0E1627;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
     background-repeat: no-repeat;
     position: relative;
