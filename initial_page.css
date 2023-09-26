@@ -64,13 +64,12 @@ body{
     background-color: rgba(0, 0, 0, 0.200);
 }
 .conteudo-inicial{
-    opacity: 0;
     transition: ease-in-out;
     box-shadow: 2px 2px 3px var(--light-blue);
-    animation-name: box-animaction, opacity1;
-    animation-duration: 2s, 0.8s;
-    animation-delay: 0s, 0.5s;
-    animation-iteration-count: infinite, unset;
+    animation-name: box-animaction;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
     background-color: rgba(0, 0, 0, 0.600);
     padding: 3rem;
     margin-bottom: 5%;
