@@ -62,7 +62,7 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.300);
-    backdrop-filter: blur(2px)
+
 }
 .conteudo-inicial{
     transition: ease-in-out;
