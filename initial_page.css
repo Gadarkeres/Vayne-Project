@@ -64,9 +64,10 @@ body{
     background-color: rgba(0, 0, 0, 0.200);
 }
 .conteudo-inicial{
+    opacity: 0;
     transition: ease-in-out;
     box-shadow: 2px 2px 3px var(--light-blue);
-    animation-name: box-animaction, opacity;
+    animation-name: box-animaction, opacity1;
     animation-duration: 2s, 0.8s;
     animation-delay: 0s, 0.5s;
     animation-iteration-count: infinite, unset;
@@ -169,6 +170,14 @@ body{
 }
 /* pagina inicial */
 
+@keyframes opacity1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @keyframes box-animaction{
     25%{
         box-shadow: 2px 2px 3px var(--light-blue);
