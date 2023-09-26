@@ -211,7 +211,22 @@ body{
         opacity: 0.2;
         display: none;
     }
-  
+}
+.reset_page{
+    animation-name: reset_page;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+}
+@keyframes reset_page {
+
+      0%{
+        transform:translateY(-100vh);
+        opacity: 0.2;
+    }
+    100%{
+        transform:translateY(0);
+        opacity: 1;
+    }
 }
 /* pagina inicial */
 
