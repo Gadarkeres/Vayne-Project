@@ -14,15 +14,18 @@
  --dark-black:#0E1627;
 }
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
+    background-repeat: no-repeat;
     position: relative;
-   background-image: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
-   background-repeat: no-repeat;
-   z-index: 1;
-   height: 100vh;
+    z-index: 1;
+    height: 0vw;
+
 }
 /* pagina inicial */
 .container-inicial{
-    
     z-index: 2;
     position: absolute;
     top: 0;
@@ -35,7 +38,6 @@ body{
     background-image: url(images/Vayne_0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
     
 }
 .trocar_pagina{
@@ -43,6 +45,7 @@ body{
     animation-name: change_page;
     animation-fill-mode: forwards;
     animation-duration: 0.8s;
+
     z-index: 1;
     position: relative;
     top: 0;
