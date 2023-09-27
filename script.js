@@ -59,7 +59,7 @@ const toggleHability = (hability, svg) => {
     hability.classList.remove('hability_expand');
     svg.classList.remove('svg_transform');
     svg.classList.add('svg_back');
-    svg.style.top('30px')
+    svg.style.top('35px')
     svg.style.right('30px')
   } else {
     hability.classList.add('hability_expand');
