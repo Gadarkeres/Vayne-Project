@@ -209,10 +209,6 @@ animation-fill-mode: forwards;
   background-color: var(--red); 
 }
 
-
-.hability_expand::-webkit-scrollbar-thumb:hover {
-  background-color: var(--darker-red); 
-}
 /* barra de scroll container */ 
 
 
