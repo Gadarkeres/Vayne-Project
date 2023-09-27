@@ -67,19 +67,19 @@ const toggleHability = (hability, svg) => {
 };
 
 // Event listeners para cada habilidade
-habilityQ.addEventListener('click', () => {
+svg.addEventListener('click', () => {
   toggleHability(habilityQ, svg);
 });
 
-habilityW.addEventListener('click', () => {
+svg2.addEventListener('click', () => {
   toggleHability(habilityW, svg2);
 });
 
-habilityE.addEventListener('click', () => {
+svg3.addEventListener('click', () => {
   toggleHability(habilityE, svg3);
 });
 
-habilityR.addEventListener('click', () => {
+svg4.addEventListener('click', () => {
   toggleHability(habilityR, svg4);
 });
 

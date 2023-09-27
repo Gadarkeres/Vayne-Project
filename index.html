@@ -41,7 +41,7 @@
             </ul>
           </nav>
           <button id="reset_button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" padding="5px" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/>
             </svg>
             
@@ -55,9 +55,11 @@
                 Olá guerreiros, meu nome é Matheus, e sou um apaixonado pela Vayne desde 2016, acumulando mais de 3 milhões de pontos de maestria com ela. Nos últimos três anos, alcancei o nível de Mestre em todas as temporadas. Estou empolgado para compartilhar tudo o que aprendi ao longo desses anos de dedicação ao jogo.
               </p>
               <div class="img"></div>
+              <div class="divide"></div>
             </section>
             <section class="section2" id="section2">
               <h2>Habilidades</h2>
+              
               <p>
                 As habilidades da Vayne são notoriamente simples e diretas. Neste tópico, vou detalhar cada mecânica e apresentar soluções para situações que podem surgir durante o jogo.
               </p>
@@ -65,31 +67,46 @@
                 <img src="images/vayne-habilidades/VayneTumble.png" alt="vayneTumble">
                 <p class="habilityp">Rolamento</p>
                 <div class="container-text-hability">
-                  <p class="habilitytext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus modi quidem exercitationem. Quam nobis excepturi cupiditate dicta eveniet quibusdam, ex eum debitis omnis? Magnam quas eaque hic autem id?</p>
+                  <span class="pros">PRÓS:</span>
+                  <ul>
+                    <li>Capacidade de resetar auto ataques ao ser conjurada após um AA, ou bater na parede.</li>
+                    <li>Quando usada em conjunto com a ultimate, é possível "enganar" facilmente os inimigos, pois o rolamento pode ser direcionado em qualquer direção, independentemente da orientação atual de Vayne.</li>
+                    <li>Pode ser utilizada como poke na lane phase deste que você tenha certeza que poderá realiza-lo com sucesso. ex: quando o adc inimigo canaliza um AA no minion é uma brecha para rolar para frente dar um hit e sair.</li>
+                   
+                  </ul>
+                <span class="contras">CONTRAS:</span>
+                <ul>
+                  <li>Alto tempo de recarga no começo do jogo: Acredite, 4 segundos é bastante coisa para a vayne.</li>
+                  <li>Escalamento baixo para inicio do jogo: A habilidade escala com seu dano de ataque total e sem dano base, significa que no começo do jogo a habilidade é mais utilizada para poke e resetar AA, não necessariamente vai dar muito dano.</li>
+                  <li>Distancia do rolamento muito curto: sem a sua ultimate para conceder invisiblidade, a habilidade se torna mais para desviar de pequenos projetéis e dar dano.</li>
+                  
+                </ul>
+
+                <p></p>
                 </div>
                 <div class="container-video"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" id="svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" id="svg" padding="5px" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                   </svg>
               </div>
               <div class="hability" id="habilityW">
                 <img src="images/vayne-habilidades/VayneSilveredBolts.png" alt="vayneTumble">
                 <p class="habilityp">Dardos de prata</p>
-                <svg xmlns="http://www.w3.org/2000/svg" id="svg2" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" id="svg2" padding="5px" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                   </svg>
               </div>
               <div class="hability" id="habilityE">
                 <img src="images/vayne-habilidades/VayneCondemn.png" alt="vayneTumble">
                 <p class="habilityp">Condenar</p>
-                <svg xmlns="http://www.w3.org/2000/svg" id="svg3" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" id="svg3" padding="5px" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                   </svg>
               </div>
               <div class="hability" id="habilityR">
                 <img src="images/vayne-habilidades/VayneInquisition.png" alt="vayneTumble">
                 <p class="habilityp">Hora final</p>
-                <svg xmlns="http://www.w3.org/2000/svg" id="svg4" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" id="svg4" padding="5px" width="36" height="36" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                   </svg>
               </div>
