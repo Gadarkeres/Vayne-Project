@@ -29,12 +29,13 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  border: 2px solid var(--light-white);
+  border: 2px solid var(--light-blue);
   position: absolute;
   min-width: 50px;
   top: 15px;
   left: 10px;
   border-radius: 0.9rem;
+  transition: 0.5s all ease-in-out;
 }
 .change_theme div{
   cursor: pointer;
