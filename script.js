@@ -31,7 +31,7 @@ change_button.addEventListener("click", () => {
   initial_container.classList.add("trocar_pagina");
   setTimeout(() => {
     main_container.style.display = "flex";
-    body.style.height = "100vw"
+    body.style.min_height = "100vh"
   }, 800);
 });
 // voltar pagina

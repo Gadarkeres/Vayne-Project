@@ -27,13 +27,12 @@
 }
 
 .header {
-max-width: 700px; 
+  max-width: 800px; 
   min-width: 400px;
-  width: 36vw;
+  width: 40vw;
   height: 55px;
   position: relative;
   background-color: var(--dark-black);
-  
   padding: 1rem 2rem;
   border-radius: 0px 0px 10px 10px;
 }
@@ -45,7 +44,7 @@ max-width: 700px;
 .header nav ul {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
   list-style-type: none;
 }
 .header nav ul li a {
@@ -125,7 +124,7 @@ section {
   margin-top: 1rem;
   line-height: 1.7rem;
   text-indent: 1rem;
-  text-align: left;
+  text-align: justify;
 }
 /* estilos gerais */
 .main { 
@@ -153,18 +152,20 @@ section {
     position: relative;
     padding: 1rem;
     border-radius: 5px;
-    display: flex;
     gap:1rem;
     margin-top: 2rem;
     border: 2px solid var(--light-blue);
     cursor: pointer;
     transition: ease-in-out 0.5s;
+    overflow: hidden;
 }
 .hability:hover{
     background-color: var(--dark-blue);
 }
 .habilityp{
+  display: inline-block;
     font-weight: 800;
+    transform: translateY(-2rem);
 }
 .hability svg{
 position: absolute;
@@ -206,4 +207,7 @@ animation-fill-mode: forwards;
     to{
         transform: rotate(0deg);
     }
+}
+.container-text-hability{
+padding: 1rem;
 }
