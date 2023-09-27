@@ -13,7 +13,60 @@
   --light-blue: #2a91cc;
   --dark-black: #0e1627;
 }
+.patch{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: 1px solid var(--light-white);
+  opacity: 0.5;
+  padding: 0.5rem;
+  border-radius: 0px 10px 0px 10px;
+ 
+}
+/* mudar tema*/
+.change_theme{
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 2px solid var(--light-white);
+  position: absolute;
+  min-width: 50px;
+  top: 15px;
+  left: 10px;
+  border-radius: 0.9rem;
+}
+.change_theme div{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 
+}
+.change_theme div:first-child{
+  border: 2px solid var(--red);
+  transition: 0.5s all;
+}
+.change_theme div:first-child:hover{
+  background-color: var(--red);
+}
+.change_theme div:nth-child(2){
+  border: 2px solid var(--light-blue);
+  transition: 0.5s all;
+}
+.change_theme div:nth-child(2):hover{
+  background-color: var(--light-blue);
+}
+.change_theme div:nth-child(3){
+  border: 2px solid var(--light-white);
+  transition: 0.5s all;
+  
+}
+.change_theme div:nth-child(3):hover{
+  background-color: var(--light-white);
+}
+
+/* mudar tema*/
 .container {
   width: 100%;
   min-height: 100%;
@@ -202,16 +255,7 @@ section {
   border: 2px solid var(--red);
 }
 
-.patch{
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  border: 1px solid var(--light-white);
-  opacity: 0.5;
-  padding: 0.5rem;
-  border-radius: 0px 10px 0px 10px;
- 
-}
+
 /* barra de scroll container */
 .hability_expand::-webkit-scrollbar {
   width: 5px;
