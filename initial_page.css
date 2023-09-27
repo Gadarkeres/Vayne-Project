@@ -15,6 +15,7 @@
 }
 body{
     background-image: linear-gradient(135deg, var(--light-blue) 10%, var(--dark-blue) 90%);
+    
   background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;

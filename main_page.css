@@ -97,7 +97,7 @@ section {
   margin-bottom: 1rem;
   width: 100%;
 }
-.section1 {
+.section1, .section3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ section {
   width: 80%;
   min-width: 420px;
 }
-.main section h2:first-child {
+.main section h2 {
   padding-top: 2.5rem;
 }
 .main section h2 {
@@ -120,10 +120,12 @@ section {
   text-transform: uppercase;
   color: var(--light-blue);
 }
+
 .divide {
   width: 50%;
   height: 2px;
   background-color: var(--red);
+  margin-top: 1.5rem;
 }
 
 .main section p {
@@ -134,8 +136,9 @@ section {
 }
 /* estilos gerais */
 .main {
+  position: relative;
   max-width: 1000px;
-  min-width: 450px;
+  min-width: 400px;
   width: 45vw;
   color: var(--light-white);
   background-color: var(--dark-black);
@@ -146,7 +149,7 @@ section {
 .main .section1 .img {
   background-image: url(images/op.gg.png);
   background-repeat: no-repeat;
-  height: 250px;
+  height: 230px;
   border-radius: 5px;
 }
 .hability img {
@@ -154,6 +157,7 @@ section {
   height: 70px;
 }
 .hability {
+  cursor: pointer;
   height: 100px;
   position: relative;
   padding: 1rem;
@@ -197,6 +201,17 @@ section {
   overflow: auto;
   border: 2px solid var(--red);
 }
+
+.patch{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: 1px solid var(--light-white);
+  opacity: 0.5;
+  padding: 0.5rem;
+  border-radius: 0px 10px 0px 10px;
+ 
+}
 /* barra de scroll container */
 .hability_expand::-webkit-scrollbar {
   width: 5px;
@@ -225,7 +240,7 @@ section {
 }
 /* habilidades */
 .container-text-hability {
-  padding: 2rem 1rem;
+  padding: 1.25rem 0.75rem;
 }
 .container-text-hability ul {
   padding: 0.5rem;

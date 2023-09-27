@@ -6,7 +6,12 @@ const initial_container = document.querySelector("#initial-container");
 const reset_button = document.querySelector("#reset_button");
 const body = document.querySelector("#body")
 
+// pagina incial /
+
 // pagina principal
+
+
+//habilidades
 const habilityQ = document.querySelector("#habilityQ")
 const habilityW = document.querySelector("#habilityW")
 const habilityE = document.querySelector("#habilityE")
@@ -16,7 +21,20 @@ const svg = document.querySelector("#svg")
 const svg2 = document.querySelector("#svg2")
 const svg3 = document.querySelector("#svg3")
 const svg4 = document.querySelector("#svg4")
+
 const main_container = document.querySelector("#container");
+
+const text_hability1 = document.querySelector("#text-hability1")
+const text_hability2 = document.querySelector("#text-hability2")
+const text_hability3 = document.querySelector("#text-hability3")
+const text_hability4 = document.querySelector("#text-hability4")
+// habilidades /
+
+
+
+
+
+
 
 // expandir texto
 btn_expand.addEventListener("click", () => {
@@ -54,11 +72,15 @@ reset_button.addEventListener("click", resetInitialContainer);
 
 
 // Função para expandir/contrair habilidades
-const toggleHability = (hability, svg) => {
+const toggleHability = (hability, svg, text_hability) => {
   const isExpanded = hability.classList.contains('hability_expand');
   
   if (isExpanded) {
-    hability.scrolltop = 0
+    setTimeout(() => {
+      text_hability.style.display = 'none';
+    },350)
+    
+    hability.scrolltop = 0;
     hability.classList.remove('hability_expand');
     svg.classList.remove('svg_transform');
     svg.classList.add('svg_back');
@@ -66,6 +88,7 @@ const toggleHability = (hability, svg) => {
     svg.style.right ='30px'
    
   } else {
+    text_hability.style.display = 'block';
     hability.classList.add('hability_expand');
     svg.classList.remove('svg_back');
     svg.classList.add('svg_transform');
@@ -73,19 +96,19 @@ const toggleHability = (hability, svg) => {
 };
 
 // Event listeners para cada habilidade
-svg.addEventListener('click', () => {
-  toggleHability(habilityQ, svg);
+habilityQ.addEventListener('click', () => {
+  toggleHability(habilityQ, svg, text_hability1);
 });
 
-svg2.addEventListener('click', () => {
-  toggleHability(habilityW, svg2);
+habilityW.addEventListener('click', () => {
+  toggleHability(habilityW, svg2, text_hability2);
 });
 
-svg3.addEventListener('click', () => {
-  toggleHability(habilityE, svg3);
+habilityE.addEventListener('click', () => {
+  toggleHability(habilityE, svg3, text_hability3);
 });
 
-svg4.addEventListener('click', () => {
-  toggleHability(habilityR, svg4);
+habilityR.addEventListener('click', () => {
+  toggleHability(habilityR, svg4, text_hability4);
 });
 
