@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --red: #92111D;
+  --red: #92111d;
   --light-white: #e8f7fa;
   --dark-blue: #1d1441;
   --light-blue: #2a91cc;
@@ -15,9 +15,9 @@
 }
 
 .container {
-    width: 100%;
-    min-height: 100%;
-    display: none;
+  width: 100%;
+  min-height: 100%;
+  display: none;
   flex-direction: column;
   justify-items: center;
   align-items: center;
@@ -27,7 +27,7 @@
 }
 
 .header {
-  max-width: 800px; 
+  max-width: 800px;
   min-width: 400px;
   width: 40vw;
   height: 55px;
@@ -96,34 +96,31 @@
 section {
   margin-bottom: 1rem;
   width: 100%;
-  
 }
 .section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .img {
-    border-radius: 5px;
-    margin-top: 1rem;
-    width: 80%; 
-    min-width: 420px;
-   
-  }
-  .main section h2:first-child{
-    padding-top: 2.5rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 80%;
+  min-width: 420px;
+}
+.main section h2:first-child {
+  padding-top: 2.5rem;
+}
 .main section h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--light-blue);
-
 }
-.divide{
+.divide {
   width: 50%;
   height: 2px;
   background-color: var(--red);
@@ -136,10 +133,10 @@ section {
   text-align: justify;
 }
 /* estilos gerais */
-.main { 
-    max-width: 1000px; 
-    min-width: 450px;
-    width: 45vw;
+.main {
+  max-width: 1000px;
+  min-width: 450px;
+  width: 45vw;
   color: var(--light-white);
   background-color: var(--dark-black);
   margin-top: 2.5rem;
@@ -153,97 +150,95 @@ section {
   border-radius: 5px;
 }
 .hability img {
-    width: 70px; 
-    height: 70px; 
-  }
-.hability{
-    height: 100px;
-    position: relative;
-    padding: 1rem;
-    border-radius: 5px;
-    gap:1rem;
-    margin-top: 2rem;
-    border: 2px solid var(--light-blue);
-    transition: ease-in-out 0.5s;
-    overflow: hidden;
+  width: 70px;
+  height: 70px;
 }
-.hability:hover{
-    background-color: var(--dark-blue);
+.hability {
+  height: 100px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
+  gap: 1rem;
+  margin-top: 2rem;
+  border: 2px solid var(--light-blue);
+  transition: ease-in-out 0.5s;
+  overflow: hidden;
 }
-.habilityp{
+.hability:hover {
+  background-color: var(--dark-blue);
+}
+.habilityp {
   display: inline-block;
-    font-weight: 800;
-    transform: translateY(-2rem);
+  font-weight: 800;
+  transform: translateY(-2rem);
 }
-.hability svg{
-position: absolute;
-top: 35px;
-right: 30px;
-cursor: pointer;
+.hability svg {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  cursor: pointer;
 }
-.hability .svg_back{
-animation-name: animate_svg_back;
-animation-duration: 0.5s;
-animation-fill-mode: forwards;
+.hability .svg_back {
+  animation-name: animate_svg_back;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.hability > .svg_transform{
-    top: 30px;
-    right: 30px;
-    animation-name: animate_svg;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-
+.hability > .svg_transform {
+  top: 30px;
+  right: 30px;
+  animation-name: animate_svg;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-.hability_expand{
-    height: 300px;
-    background-color: var(--dark-blue);
-    overflow: auto;
-    border: 2px solid var(--red);
+.hability_expand {
+  height: 300px;
+  background-color: var(--dark-blue);
+  overflow: auto;
+  border: 2px solid var(--red);
 }
-/* barra de scroll container */ 
+/* barra de scroll container */
 .hability_expand::-webkit-scrollbar {
-  width: 5px; 
+  width: 5px;
 }
 .hability_expand::-webkit-scrollbar-thumb {
-  background-color: var(--red); 
+  background-color: var(--red);
 }
 
-/* barra de scroll container */ 
+/* barra de scroll container */
 
-
-@keyframes animate_svg{
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(180deg);
-    }
+@keyframes animate_svg {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }
-@keyframes animate_svg_back{
-    from{
-        transform: rotate(180deg);
-    }
-    to{
-        transform: rotate(0deg);
-    }
+@keyframes animate_svg_back {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 /* habilidades */
-.container-text-hability{
-padding: 2rem 1rem;
+.container-text-hability {
+  padding: 2rem 1rem;
 }
-.container-text-hability ul{
+.container-text-hability ul {
   padding: 0.5rem;
 }
-.container-text-hability li{
+.container-text-hability li {
   margin: 0.5rem 0rem;
   text-align: justify;
 }
-.pros{
+.pros {
   color: green;
   font-weight: 800;
 }
-.contras{
+.contras {
   color: var(--red);
   font-weight: 800;
 }
