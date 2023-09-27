@@ -36,67 +36,50 @@ change_button.addEventListener("click", () => {
 });
 // voltar pagina
 const resetInitialContainer = () => {
-  initial_container.classList.remove("trocar_pagina");
+  
   initial_container.classList.add("reset_page");
   main_container.style.display = "none";
   
   setTimeout(() => {
     
-    body.style.height = "0vw"
-  }, 800);  
+    initial_container.classList.remove("trocar_pagina");
+  }, 850);  
 
 };
 
 reset_button.addEventListener("click", resetInitialContainer);
 
 
-// habilidades
 
-habilityQ.addEventListener('click', () => {
-  if(habilityQ.classList.contains ('hability_expand') && (svg.classList.contains('svg_transform'))){
-    svg.classList.remove('svg_transform')
-    svg.classList.add('svg_back')
-    habilityQ.classList.remove('hability_expand')
-  }else {
-    habilityQ.classList.add('hability_expand')
-    svg.classList.add("svg_transform")
-  }
- 
-})
-habilityW.addEventListener('click', () => {
-    if(habilityW.classList.contains ('hability_expand') && (svg2.classList.contains('svg_transform'))){
-      svg2.classList.remove('svg_transform')
-      svg2.classList.add('svg_back')
-      habilityW.classList.remove('hability_expand')
-    }else {
-      habilityW.classList.add('hability_expand')
-      svg2.classList.add("svg_transform")
-    }
-   
-  })
-  habilityE.addEventListener('click', () => {
-    if(habilityE.classList.contains ('hability_expand') && (svg3.classList.contains('svg_transform'))){
-      svg3.classList.remove('svg_transform')
-      svg3.classList.add('svg_back')
-      habilityE.classList.remove('hability_expand')
-    }else {
-      habilityE.classList.add('hability_expand')
-      svg3.classList.add("svg_transform")
-    }
-   
-  })
-  habilityR.addEventListener('click', () => {
-    if(habilityR.classList.contains ('hability_expand') && (svg4.classList.contains('svg_transform'))){
-      svg4.classList.remove('svg_transform')
-      svg4.classList.add('svg_back')
-      habilityR.classList.remove('hability_expand')
-    }else {
-      habilityR.classList.add('hability_expand')
-      svg4.classList.add("svg_transform")
-    }
-   
-  })
+// Função para expandir/contrair habilidades
+const toggleHability = (hability, svg) => {
+  const isExpanded = hability.classList.contains('hability_expand');
   
+  if (isExpanded) {
+    hability.classList.remove('hability_expand');
+    svg.classList.remove('svg_transform');
+    svg.classList.add('svg_back');
+  } else {
+    hability.classList.add('hability_expand');
+    svg.classList.remove('svg_back');
+    svg.classList.add('svg_transform');
+  }
+};
 
-// habilidades /
+// Event listeners para cada habilidade
+habilityQ.addEventListener('click', () => {
+  toggleHability(habilityQ, svg);
+});
+
+habilityW.addEventListener('click', () => {
+  toggleHability(habilityW, svg2);
+});
+
+habilityE.addEventListener('click', () => {
+  toggleHability(habilityE, svg3);
+});
+
+habilityR.addEventListener('click', () => {
+  toggleHability(habilityR, svg4);
+});
 
