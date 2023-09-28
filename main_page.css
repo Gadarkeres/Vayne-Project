@@ -354,7 +354,12 @@ section {
   
 }
 @media screen and (max-width: 1030px){
- 
+  .patch{
+
+  }
+  .change_theme{
+    
+  }
   
   .main {
     overflow: hidden;
