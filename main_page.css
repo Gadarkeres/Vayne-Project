@@ -355,10 +355,12 @@ section {
 }
 @media screen and (max-width: 1030px){
   .patch{
-
+    padding: 0.25rem;
   }
   .change_theme{
-    
+    padding: 0.25rem;
+    gap: 1.5rem;
+
   }
   
   .main {
