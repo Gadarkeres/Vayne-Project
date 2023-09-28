@@ -40,6 +40,7 @@
 .red_panel{
   border: 2px solid var(--red);
 }
+/* mudar tema*/
 .change_theme div{
   cursor: pointer;
   width: 20px;
@@ -70,7 +71,7 @@
   background-color: var(--light-white);
 }
 
-/* mudar tema*/
+
 .container {
   width: 100%;
   min-height: 100%;
@@ -194,6 +195,7 @@ section {
 }
 /* estilos gerais */
 .main {
+  overflow: hidden;
   position: relative;
   max-width: 1000px;
   min-width: 400px;
@@ -308,3 +310,110 @@ section {
   color: var(--red);
   font-weight: 800;
 }
+
+/*     */
+
+#hamburguer_menu{
+  color: white;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+#close_menu{
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+/*media querys */
+
+@media screen and (min-width: 1030px) and (max-width:1250px) {
+ 
+  .header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: var(--light-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out all;
+    font-size: 0.9rem;
+  }
+  
+}
+@media screen and (max-width: 1030px){
+  .main {
+    overflow: hidden;
+    position: relative;
+    max-width: 1000px;
+    min-width: 400px;
+    width: 45vw;
+    color: var(--light-white);
+    background-color: var(--dark-black);
+    margin-top: 5rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .header{
+    position: fixed;
+    z-index: 5;
+  }
+  #close_menu{
+    display: block;
+  }
+  .header nav{
+    animation: show_menu 0.5s backwards;
+    transition: 0.5s all ease-in-out;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: 350%;
+    left: 50%;
+    width: 90%; 
+    transform: translate(-50%, -50%);
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 10px
+  }
+
+  #hamburguer_menu{
+    display: block;
+  }
+  .header nav ul {
+    text-align: center;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    list-style-type: none;
+
+  }
+  .header nav ul li a {
+    padding: 1rem;
+  }
+
+  @keyframes show_menu {
+    from{
+      opacity: 0;
+      top: 300%;
+    }
+    to{
+      opacity: 1;
+      top: 350%;
+    }
+  }
+}
+
+
+
