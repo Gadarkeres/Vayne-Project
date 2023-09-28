@@ -163,10 +163,11 @@ section {
 }
 
 .img {
-  border-radius: 5px;
+  border-radius: 1rem;
   margin-top: 1rem;
   width: 80%;
-  min-width: 420px;
+  min-width: 390px;
+  padding: 1rem 0rem;
 }
 .main section h2 {
   padding-top: 2.5rem;
@@ -209,7 +210,7 @@ section {
 .main .section1 .img {
   background-image: url(images/op.gg.png);
   background-repeat: no-repeat;
-  height: 230px;
+  height: 250px;
   border-radius: 5px;
 }
 .hability img {
@@ -333,6 +334,7 @@ section {
 /*media querys */
 
 @media screen and (min-width: 1030px) and (max-width:1250px) {
+  
  
   .header nav ul {
     display: flex;
@@ -352,6 +354,8 @@ section {
   
 }
 @media screen and (max-width: 1030px){
+ 
+  
   .main {
     overflow: hidden;
     position: relative;
@@ -368,6 +372,7 @@ section {
   .header{
     position: fixed;
     z-index: 5;
+    background-color: var(--dark-blue);
   }
   #close_menu{
     display: block;
