@@ -31,7 +31,12 @@ const text_hability4 = document.querySelector("#text-hability4")
 // habilidades /
 
 
+// mudar tema
 
+const red_theme = document.querySelector('#red_theme')
+const blue_theme = document.querySelector('#blue_theme')
+const container_display = document.querySelector("#panel_theme")
+const title = document.querySelector("#title")
 
 
 
@@ -112,3 +117,50 @@ habilityR.addEventListener('click', () => {
   toggleHability(habilityR, svg4, text_hability4);
 });
 
+
+
+
+red_theme.addEventListener('click', () => {
+  changeTheme('red_theme')
+})
+blue_theme.addEventListener('click', () => {
+  changeTheme('blue_theme')
+})
+
+const changeTheme = (theme) => {
+  if (theme === 'red_theme') {
+    container_display.classList.add('red_panel'); 
+    body.classList.add(theme);
+    const habilityElements = document.querySelectorAll('.hability');
+    habilityElements.forEach((element) => {
+      element.style.border = '2px solid #92111d';
+
+      setTimeout(() => {
+        const title = document.querySelectorAll('.color_title');
+      title.forEach((element) => {
+        element.style.color = '#92111d'
+      })
+      }, 300);
+      
+    });
+
+    
+ 
+  } else {
+    container_display.classList.remove('red_panel'); 
+    body.classList.remove('red_theme'); 
+    const habilityElements = document.querySelectorAll('.hability');
+    habilityElements.forEach((element) => {
+      element.style.border = '2px solid #2a91cc';
+
+      setTimeout(() => {
+         const title = document.querySelectorAll('.color_title');
+      title.forEach((element) => {
+        element.style.color = '#2a91cc'
+      }, 300);
+
+     
+      })
+    });
+  }
+};   
