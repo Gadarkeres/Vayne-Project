@@ -265,10 +265,10 @@ section {
 
 /* barra de scroll container */
 .hability_expand::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 .hability_expand::-webkit-scrollbar-thumb {
-  background-color: var(--red);
+  background-color: #012779;
 }
 
 /* barra de scroll container */
