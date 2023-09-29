@@ -58,18 +58,12 @@
 .change_theme div:nth-child(2){
   border: 2px solid var(--light-blue);
   transition: 0.5s all;
+  background-color: var(--light-blue)
 }
 .change_theme div:nth-child(2):hover{
   background-color: var(--light-blue);
 }
-.change_theme div:nth-child(3){
-  border: 2px solid var(--light-white);
-  transition: 0.5s all;
-  
-}
-.change_theme div:nth-child(3):hover{
-  background-color: var(--light-white);
-}
+
 
 
 .container {

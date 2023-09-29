@@ -131,6 +131,8 @@ blue_theme.addEventListener("click", () => {
 
 const changeTheme = (theme) => {
   if (theme === "red_theme") {
+    blue_theme.style.backgroundColor = 'transparent'
+    red_theme.style.backgroundColor = '#92111d'
     container_display.classList.add("red_panel");
     body.classList.add(theme);
     const habilityElements = document.querySelectorAll(".hability");
@@ -145,6 +147,8 @@ const changeTheme = (theme) => {
       }, 300);
     });
   } else {
+    blue_theme.style.backgroundColor = '#2a91cc'
+    red_theme.style.backgroundColor = 'transparent'
     container_display.classList.remove("red_panel");
     body.classList.remove("red_theme");
     const habilityElements = document.querySelectorAll(".hability");
