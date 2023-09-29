@@ -45,11 +45,6 @@ const menu = document.querySelector('#menu')
 
 
 
-
-
-
-
-
 // expandir texto
 btn_expand.addEventListener("click", () => {
   btn_expand.style.display = "none";
@@ -62,6 +57,9 @@ change_button.addEventListener("click", () => {
     initial_container.classList.remove("reset_page");
   }
   initial_container.classList.add("trocar_pagina");
+  setTimeout (() => {
+    initial_container.style.display = 'none'
+  },800)
   setTimeout(() => {
     main_container.style.display = "flex";
     body.style.min_height = "100vh";
@@ -75,6 +73,8 @@ const resetInitialContainer = () => {
   setTimeout(() => {
     initial_container.classList.remove("trocar_pagina");
   }, 850);
+    initial_container.style.display = 'flex'
+
 };
 
 reset_button.addEventListener("click", resetInitialContainer);
