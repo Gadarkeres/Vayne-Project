@@ -187,7 +187,11 @@ closeMenu()
 })
 
 menu_text.forEach((item) => {
-  item.addEventListener('click', () => {
+  const isMobile = window.innerWidth <= 1030;
+  if(isMobile){
+      item.addEventListener('click', () => {
     closeMenu();
   });
+  }
+
 });
