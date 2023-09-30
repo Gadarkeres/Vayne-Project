@@ -325,6 +325,19 @@ section {
   cursor: pointer;
   display: none;
 }
+.btn_scoll_container{
+  position: fixed;
+  top: 90%;
+  right: 10%;
+}
+.btn_scoll_container svg{
+  color: white;
+  transition: all 0.5s;
+}
+.btn_scoll_container svg:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+}
 
 /*media querys */
 

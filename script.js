@@ -41,7 +41,9 @@ const title = document.querySelector("#title");
 const close_menu = document.querySelector('#close_menu')
 const open_menu = document.querySelector('#hamburguer_menu')
 const menu = document.querySelector('#menu')
-  const menu_text = document.querySelectorAll(".menu_text")
+const menu_text = document.querySelectorAll(".menu_text")
+const btn_scroll = document.querySelector("#btn_scroll")
+
 
 
 
@@ -189,9 +191,34 @@ closeMenu()
 menu_text.forEach((item) => {
   const isMobile = window.innerWidth <= 1030;
   if(isMobile){
+ 
       item.addEventListener('click', () => {
+     
     closeMenu();
   });
   }
 
+});
+
+const checkVisibility = () => {
+  const screenWidth = window.innerWidth
+  const scrollY = window.scrollY
+
+  if(screenWidth > 1030 && scrollY > 200){
+    btn_scroll.style.opacity = '1'
+  }else {
+    btn_scroll.style.opacity = '0'
+  }
+}
+
+window.addEventListener('load', checkVisibility);
+
+
+window.addEventListener('scroll', checkVisibility);
+
+btn_scroll.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
