@@ -204,7 +204,7 @@ const checkVisibility = () => {
   const screenWidth = window.innerWidth
   const scrollY = window.scrollY
 
-  if(screenWidth > 1030 && scrollY > 200){
+  if(screenWidth > 1030 && scrollY > 350){
     btn_scroll.style.opacity = '1'
   }else {
     btn_scroll.style.opacity = '0'
