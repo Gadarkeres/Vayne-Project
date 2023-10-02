@@ -45,6 +45,25 @@ const menu_text = document.querySelectorAll(".menu_text")
 const btn_scroll = document.querySelector("#btn_scroll")
 
 
+// macthups
+const hard = document.querySelector('#hard')
+const medium = document.querySelector('#medium')
+const easy = document.querySelector('#easy')
+
+const svgm1 = document.querySelector('#svgm1')
+const svgm2 = document.querySelector('#svgm2')
+const svgm3 = document.querySelector('#svgm3')
+
+const subcontainer = document.querySelector('#subcontainer')
+
+
+
+
+
+
+
+
+
 
 
 // expandir texto
@@ -200,6 +219,7 @@ menu_text.forEach((item) => {
 
 });
 
+// scroll
 const checkVisibility = () => {
   const screenWidth = window.innerWidth
   const scrollY = window.scrollY
@@ -234,7 +254,45 @@ btn_scroll.addEventListener('click', () => {
 });
 
 
+// expandir macthups
 
+const expand_Matchups = (macthup, svgm) => {
+  isExpanded = macthup.classList.contains('macthup_expand')
+  if (isExpanded){
+    macthup.classList.remove('macthup_expand')
+    svgm.style.transform = 'rotate(0deg)'
+    macthup.style.height = '3rem'
+    macthup.style.overflow = 'hidden'
+    subcontainer.style.display = 'none'
+  } else{
+    macthup.classList.add('macthup_expand')
+    macthup.style.height = '15rem'
+    svgm.style.transform = 'rotate(180deg)'
+    macthup.style.overflow = 'auto'
+    subcontainer.style.display = 'flex'
+    
+  }
+}
+
+hard.addEventListener('click', () => {
+  macthup = hard
+  svgm = svgm1
+
+  expand_Matchups(macthup, svgm)
+})
+medium.addEventListener('click', () => {
+  macthup = hard
+  svgm = svgm1
+
+  expand_Matchups(macthup, svgm)
+})
+
+easy.addEventListener('click', () => {
+  macthup = hard
+  svgm = svgm1
+
+  expand_Matchups(macthup, svgm)
+})
 
 
 

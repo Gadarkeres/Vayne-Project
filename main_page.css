@@ -384,6 +384,71 @@ section {
   justify-content: center;
 }
 
+.macthup-main{
+
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.macthup{
+  padding: 1rem 2rem;
+}
+#hard{
+  overflow: hidden;
+  transition: height ease-in-out 0.5s;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  border: 1.5px solid red;
+  height: 3rem;
+}
+#medium{
+  transition: height ease-in-out 0.5s;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  border: 1.5px solid yellow;
+}
+#easy{
+  transition: height ease-in-out 0.5s;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  border: 1.5px solid green;
+}
+.icon{
+  transition: all 0.5s;
+  position: absolute;
+  top: 0.75rem;
+  right: 5%;
+}
+.macthup_expand{
+  transition: height ease-in-out 0.5s
+}
+.subcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+ width: 100%;
+ gap: 1rem;
+}
+.subcontainer .champion{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 80%;
+}
+.subcontainer .champion img{
+  margin-top: 1rem;
+  width: 50px;
+  height: 50px;
+
+}
 
 /*media querys */
 
