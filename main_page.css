@@ -25,6 +25,10 @@
   border-radius: 0px 10px 0px 10px;
 
 }
+p{
+  padding: 0 0.5rem;
+}
+
 /* mudar tema*/
 .change_theme{
   padding: 0.5rem;
@@ -370,7 +374,6 @@ section {
 }
 .container_build h3{
     color: var(--light-blue);
-    text-transform: capitalize;
     font-size: 1.3rem;
 }
 
