@@ -363,6 +363,9 @@ section {
     height: 50px;
 }
 .video{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 400px;
     margin-top: 1rem;
 }
 .container_build h3{
@@ -370,6 +373,7 @@ section {
     text-transform: capitalize;
     font-size: 1.3rem;
 }
+
 
 
 /*media querys */
