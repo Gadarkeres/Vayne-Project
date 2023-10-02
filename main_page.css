@@ -183,6 +183,12 @@ section {
   background-color: var(--red);
   margin-top: 1.5rem;
 }
+.divide-build{
+    width: 30%;
+    height: 2px;
+    background-color: var(--red);
+    margin: 2rem;
+}
 
 .main section p {
   margin-top: 1rem;
@@ -339,11 +345,37 @@ section {
   transform: scale(1.08);
   cursor: pointer;
 }
+.container_build{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.icons_hability ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.icon-hability{
+    width: 50px;
+    height: 50px;
+}
+.video{
+    margin-top: 1rem;
+}
+.container_build h3{
+    color: var(--light-blue);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
 
 /*media querys */
 
 @media screen and (min-width: 1030px) and (max-width:1250px) {
-
+  
 
   .header nav ul {
     display: flex;
@@ -363,6 +395,10 @@ section {
 
 }
 @media screen and (max-width: 1030px){
+    .icon-hability{
+        width: 35px;
+        height: 35px;
+    }
   .patch{
     padding: 0.25rem;
   }
