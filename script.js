@@ -206,8 +206,10 @@ const checkVisibility = () => {
 
   if(screenWidth > 1030 && scrollY > 350){
     btn_scroll.style.opacity = '1'
+    btn_scroll.disabled = false;
   }else {
     btn_scroll.style.opacity = '0'
+    btn_scroll.disabled = true;
   }
 }
 
@@ -217,8 +219,23 @@ window.addEventListener('load', checkVisibility);
 window.addEventListener('scroll', checkVisibility);
 
 btn_scroll.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+  if (!btn_scroll.disabled) { 
+    btn_scroll.disabled = true; 
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    
+  
+    setTimeout(() => {
+      btn_scroll.disabled = false;
+    }, 1000); 
+  }
 });
+
+
+
+
+
+
+
