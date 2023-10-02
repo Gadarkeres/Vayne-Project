@@ -54,7 +54,6 @@ const svgm1 = document.querySelector('#svgm1')
 const svgm2 = document.querySelector('#svgm2')
 const svgm3 = document.querySelector('#svgm3')
 
-const subcontainer = document.querySelector('#subcontainer')
 
 
 
@@ -258,6 +257,7 @@ btn_scroll.addEventListener('click', () => {
 
 const expand_Matchups = (macthup, svgm) => {
   isExpanded = macthup.classList.contains('macthup_expand')
+  const subcontainer = macthup.querySelector('.subcontainer')
   if (isExpanded){
     macthup.classList.remove('macthup_expand')
     svgm.style.transform = 'rotate(0deg)'
@@ -281,15 +281,15 @@ hard.addEventListener('click', () => {
   expand_Matchups(macthup, svgm)
 })
 medium.addEventListener('click', () => {
-  macthup = hard
-  svgm = svgm1
+  macthup = medium
+  svgm = svgm2
 
   expand_Matchups(macthup, svgm)
 })
 
 easy.addEventListener('click', () => {
-  macthup = hard
-  svgm = svgm1
+  macthup = easy
+  svgm = svgm3
 
   expand_Matchups(macthup, svgm)
 })

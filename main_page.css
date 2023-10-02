@@ -194,7 +194,7 @@ section {
     margin: 2rem;
 }
 
-.main section p {
+.main section:not(#section4) p {
   margin-top: 1rem;
   line-height: 1.7rem;
   text-indent: 1rem;
@@ -209,7 +209,7 @@ section {
   width: 45vw;
   color: var(--light-white);
   background-color: var(--dark-black);
-  margin-top: 2.5rem;
+  margin: 2.5rem 0rem;
   padding: 1rem;
   border-radius: 15px;
 }
@@ -279,6 +279,12 @@ section {
 .hability_expand::-webkit-scrollbar-thumb {
   background-color: #012779;
 }
+.macthup::-webkit-scrollbar {
+  width: 10px;
+}
+.macthup::-webkit-scrollbar-thumb {
+  background-color: #012779;
+}
 
 /* barra de scroll container */
 
@@ -342,11 +348,11 @@ section {
   right: 10%;
 }
 .btn_scoll_container svg{
-  color: white;
+  color: var(--light-white);
   transition: all 0.5s;
 }
 .btn_scoll_container svg:hover{
-  transform: scale(1.08);
+  transform: scale(1.1);
   cursor: pointer;
 }
 .container_build{
@@ -365,6 +371,12 @@ section {
 .icon-hability{
     width: 50px;
     height: 50px;
+    transition: all 0.3s ;
+}
+.icon-hability:hover{
+
+  transform: scale(1.15);
+  cursor: pointer;
 }
 .video{
     margin: 0 auto;
@@ -384,6 +396,8 @@ section {
   justify-content: center;
 }
 
+/* macthups */
+
 .macthup-main{
 
   width: 100%;
@@ -398,6 +412,7 @@ section {
   padding: 1rem 2rem;
 }
 #hard{
+  border-radius: 2.5px;
   overflow: hidden;
   transition: height ease-in-out 0.5s;
   cursor: pointer;
@@ -407,18 +422,24 @@ section {
   height: 3rem;
 }
 #medium{
+  border-radius: 2.5px;
+  overflow: hidden;
   transition: height ease-in-out 0.5s;
   cursor: pointer;
   position: relative;
   width: 100%;
   border: 1.5px solid yellow;
+  height: 3rem;
 }
 #easy{
+  border-radius: 2.5px;
+  overflow: hidden;
   transition: height ease-in-out 0.5s;
   cursor: pointer;
   position: relative;
   width: 100%;
   border: 1.5px solid green;
+  height: 3rem;
 }
 .icon{
   transition: all 0.5s;
@@ -441,13 +462,19 @@ section {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  width: 80%;
+  width: 90%;
 }
 .subcontainer .champion img{
   margin-top: 1rem;
   width: 50px;
   height: 50px;
 
+}
+.section4 p {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+  text-align: justify;
+  padding: 0px 1rem;
 }
 
 /*media querys */
@@ -473,6 +500,12 @@ section {
 
 }
 @media screen and (max-width: 1030px){
+  .section4 p {
+    margin-top: 1rem;
+    line-height: 1.3rem;
+    text-align: left;
+    padding: 0px 1rem;
+  }
     .icon-hability{
         width: 35px;
         height: 35px;
