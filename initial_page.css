@@ -14,7 +14,7 @@
  --dark-black:#0E1627;
 }
 body{
-    background: linear-gradient(135deg, var(--light-blue) 10%, var(--dark-blue) 90%);
+    background: linear-gradient(145deg, var(--light-blue) 5%, var(--dark-blue) 90%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -30,7 +30,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--dark-black) 10%, var(--red) 90%);
+    background: linear-gradient(145deg, var(--dark-black) 10%, var(--red) 90%);
     opacity: 0; 
     z-index: -1; 
     transition: opacity 0.5s ease-in-out; 
