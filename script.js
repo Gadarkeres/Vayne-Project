@@ -4,7 +4,7 @@ const text = document.querySelector("#text_hidden");
 const change_button = document.querySelector("#change-page");
 const initial_container = document.querySelector("#initial-container");
 const reset_button = document.querySelector("#reset_button");
-const body = document.querySelector("#body");
+const background = document.querySelector("#background")
 
 // pagina incial /
 
@@ -136,7 +136,7 @@ const changeTheme = (theme) => {
     blue_theme.style.backgroundColor = 'transparent'
     red_theme.style.backgroundColor = '#92111d'
     container_display.classList.add("red_panel");
-    body.classList.add(theme);
+    background.classList.add(theme);
     const habilityElements = document.querySelectorAll(".hability");
     habilityElements.forEach((element) => {
       element.style.border = "2px solid #92111d";
@@ -152,7 +152,7 @@ const changeTheme = (theme) => {
     blue_theme.style.backgroundColor = '#2a91cc'
     red_theme.style.backgroundColor = 'transparent'
     container_display.classList.remove("red_panel");
-    body.classList.remove("red_theme");
+    background.classList.remove("red_theme");
     const habilityElements = document.querySelectorAll(".hability");
     habilityElements.forEach((element) => {
       element.style.border = "2px solid #2a91cc";

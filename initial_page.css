@@ -15,24 +15,24 @@
  --dark-black:#0E1627;
  --dark-black-background:#182746;
 }
-body{
-    background: linear-gradient(145deg, var(--light-blue) 5%, var(--dark-blue) 90%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-    min-height: 0vh;
-    transition: background 0.5s ease-in-out;
-
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(145deg, var(--light-blue) 30%, var(--dark-blue) 90%);
 }
-body::before {
+.background-container:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(145deg, var(--dark-black-background) 10%, var(--red-background) 90%);
+    background: linear-gradient(145deg, var(--dark-black-background) 30%, var(--red-background) 90%);
     opacity: 0; 
     z-index: -1; 
     transition: opacity 0.5s ease-in-out; 
