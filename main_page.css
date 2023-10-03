@@ -385,6 +385,7 @@ section {
     margin-top: 1rem;
 }
 .container_build h3{
+  text-align: center;
     color: var(--light-blue);
     font-size: 1.3rem;
 }
