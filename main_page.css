@@ -502,8 +502,11 @@ footer p{
 /*media querys */
 
 @media screen and (min-width: 1030px) and (max-width:1250px) {
-  
+  footer{
+    height: 130px;
+  }
 
+ 
   .header nav ul {
     display: flex;
     flex-direction: row;
@@ -522,6 +525,10 @@ footer p{
 
 }
 @media screen and (max-width: 1030px){
+  footer{
+    height: 150px;
+  }
+
   .section4 p {
     margin-top: 1rem;
     line-height: 1.3rem;
