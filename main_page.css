@@ -391,6 +391,7 @@ section {
 }
 
 .section4{
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,7 +421,7 @@ section {
   position: relative;
   width: 100%;
   border: 1.5px solid red;
-  height: 3.5rem;
+  height: 3.3rem;
 }
 #medium{
   border-radius: 2.5px;
@@ -430,7 +431,7 @@ section {
   position: relative;
   width: 100%;
   border: 1.5px solid yellow;
-  height: 3.5rem;
+  height: 3.3rem;
 }
 #easy{
   border-radius: 2.5px;
@@ -440,7 +441,7 @@ section {
   position: relative;
   width: 100%;
   border: 1.5px solid green;
-  height: 3.5rem;
+  height: 3.3rem;
 }
 .icon{
   transition: all 0.5s;
@@ -476,6 +477,26 @@ section {
   line-height: 1.7rem;
   text-align: justify;
   padding: 0px 1rem;
+}
+footer{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    max-width: 800px;
+    min-width: 400px;
+    width: 40vw;
+    height: 55px;
+    position: relative;
+    background-color: var(--dark-black);
+    padding: 3rem 2.5rem;
+    border-radius: 10px 10px 0px 0px;
+
+}
+footer p{
+  padding-bottom: 0.5rem;
+  text-align: center;
+  color: var(--light-white);
 }
 
 /*media querys */

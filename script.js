@@ -261,7 +261,7 @@ const expand_Matchups = (macthup, svgm) => {
   if (isExpanded){
     macthup.classList.remove('macthup_expand')
     svgm.style.transform = 'rotate(0deg)'
-    macthup.style.height = '3.5rem'
+    macthup.style.height = '3.3rem'
     macthup.style.overflow = 'hidden'
     subcontainer.style.display = 'none'
   } else{
